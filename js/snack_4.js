@@ -8,7 +8,7 @@ console.log(numList);
 console.log(abcList);
 
 for (let i = 0; i < abcList.length; i++) {
-  mixList.push(numList[i] + abcList[i])
+  mixList.push(numList[i], abcList[i])
   
 }
 
