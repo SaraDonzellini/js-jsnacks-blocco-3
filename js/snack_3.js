@@ -10,7 +10,12 @@ console.log(numberList_2)
 
 while (numberList_1.length !== numberList_2.length) {
   let userNumber = parseInt(prompt("inserisci un numero"))
-  numberList_2.push(userNumber)
+
+  if (numberList_1.length > numberList_2.length) {
+    numberList_2.push(userNumber)
+  } else {
+    numberList_1.push(userNumber)
+  }
 }
 
 console.log(numberList_1)
