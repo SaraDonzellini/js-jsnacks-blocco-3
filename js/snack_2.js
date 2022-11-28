@@ -3,20 +3,18 @@
 
 let arrayNums = [];
 
-let userNumber = parseInt(prompt("Inserisci un numero minore di 50"));
 let somma = 0;
 
 
-while (somma <= 50) {
-  userNumber = parseInt(prompt("Inserisci un numero minore di 50"));
-  somma += userNumber
-  arrayNums.push(userNumber)
+while (somma < 50) {
+  let userNumber = parseInt(prompt("Inserisci un numero minore di 50"));
+  somma += userNumber;
+  arrayNums.push(userNumber);
 
   if (somma > 50){
-    console.log('hai sballato')
+    console.log('hai sballato');
   }
 
 }
-console.log(somma)
-console.log(arrayNums)
-console.log(userNumber)
+console.log(somma);
+console.log(arrayNums);

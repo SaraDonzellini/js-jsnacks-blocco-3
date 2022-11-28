@@ -6,5 +6,4 @@ while (userNumber < 1 || userNumber > 10){
   console.log(userNumber);
 }
 
-// Number.isNaN || userNumber < 1 || userNumber > 10
 
