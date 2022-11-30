@@ -18,18 +18,18 @@ const array = [1, 33, 55, 64, 33, 22, 10, 44];
 const divVerde = document.querySelector(".verde");
 const divRosso = document.querySelector(".rosso");
 
-function newPElement (p) {
+function getNewPElement (content) {
   const PElement = document.createElement('p');
-  
-  return;
+  PElement.innerText = content;
+  return PElement;
 }
 
 for (let i = 0; i < array.length; i++) {
   
   if (array[i] % 2 === 0){
-    divVerde.append(newPElement(i) + " ");
+    divVerde.append(getNewPElement(array[i]) + " ");
   } else {
-    divRosso.append(newPElement(i) + " ");
+    divRosso.append(getNewPElement(array[i]) + " ");
   }
 
   
