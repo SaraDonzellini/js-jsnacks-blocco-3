@@ -27,9 +27,9 @@ function getNewPElement (content) {
 for (let i = 0; i < array.length; i++) {
   
   if (array[i] % 2 === 0){
-    divVerde.append(getNewPElement(array[i]) + " ");
+    divVerde.append(getNewPElement(array[i]));
   } else {
-    divRosso.append(getNewPElement(array[i]) + " ");
+    divRosso.append(getNewPElement(array[i]));
   }
 
   
